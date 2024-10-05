@@ -54,7 +54,7 @@ nav {
 
 #navbar-fullscreen li, .navbar li {
     margin: 0 10px;
-    font-size: clamp(10px, 1.5vw, 20px);
+    font-size: clamp(12px, 1.5vw, 20px);
 }
 
 #navbar-fullscreen li a, .navbar li a, #language {
@@ -189,7 +189,7 @@ main {
     color: var(--color-dark);
     border: none;
     border-radius: 50px;
-    font-size: clamp(12px, 1.5vw, 20px);
+    font-size: clamp(14px, 1.5vw, 20px);
     font-family: 'Josefin Sans', 'Josefin-Sans-Flex-Fallback', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
     font-weight: 600;
     text-decoration: none;
