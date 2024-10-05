@@ -1,0 +1,238 @@
+
+:root {
+    --color-white: #FFFFFF;
+    --color-light: #ffffff;
+    --color-middle-light: #ffffff;
+    --color-middle: rgba(180,172,164, 0.5);
+    --color-dark: rgb(22, 24, 33);
+    --color-black: #161821;
+    --color-hightlight-light: rgba(0, 0, 0, 0.3);
+    --color-highlight-dark: rgba(22, 24, 33, 0.8);
+}
+
+
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/* Body styling */
+body {
+    font-family: "Raleway", sans-serif;
+    font-weight: 100;
+    line-height: 1.6;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: var(--color-dark);
+    padding: 0.5rem 0;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#navbar-fullscreen, .navbar {
+    display: none;
+    justify-content: center;
+    list-style: none;
+}
+
+#navbar-fullscreen li, .navbar li {
+    margin: 0 10px;
+    font-size: clamp(10px, 1.5vw, 20px);
+}
+
+#navbar-fullscreen li a, .navbar li a, #language {
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.navbar {
+    text-align: center;
+}
+
+.navbar li {
+    margin: 1rem 2rem;
+    font-size: clamp(12px, 1.5vw, 20px);
+}
+
+
+#navbar-fullscreen li a:hover, .navbar li a:hover, #nav-buttons a:hover {
+    text-decoration: underline;
+}
+
+#nav-buttons {
+    display: flex;                /* Use flexbox to align items */
+    justify-content: space-between;  /* Align items to the left and right */
+    align-items: center;          /* Vertically center the items */
+}
+
+#language {
+    padding-right: 1rem;
+}
+
+#navbarButton {
+    padding: 0.3rem;
+    text-align: center;
+    margin: 0.3rem;
+    background-color: var(--color-middle-light);
+    color: var(--color-dark);
+    border-radius: 4px;
+    border: 2px solid var(--color-dark);
+}
+
+#navbarButton::before {
+    content: "☰";
+}
+
+#navbarButton.display::before {
+	content: "X";
+}
+
+.displayMenu {
+    display: block;
+}
+
+.display {
+    display: inline-block;
+}
+
+
+main {
+    background-image: url('../images/silvester_Hamburg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; /* Makes the image cover the entire element */
+    width: 100%;
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+}
+
+.hero-text {
+    background-color: var(--color-highlight-dark);
+    padding: 1.5rem 2.5rem;
+    display: inline-block;
+    text-align: center;
+    margin: 0rem auto 40vh auto;
+}
+
+.hero-text h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: clamp(20px, 5vw, 80px);
+    font-weight: 100;
+    margin: 0;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.hero-text h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: clamp(15px, 3vw, 40px);
+    font-weight: 100;
+    margin-top: 0.7rem;
+}
+
+.card-dark, .card-light {
+    width: 97%;
+    margin: 1rem auto;
+    border-radius: 5px;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.card-dark {
+    background-color: var(--color-black);
+}
+
+.card-light {
+    background-color: var(--color-white);
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column; /* Stack the buttons vertically */
+    align-items: center; /* Center the buttons horizontally */
+    border-top: 2px solid white; /* White line above the buttons */
+    padding-top: 2.5px; /* Adds space between the line and the buttons */
+    width: 60%; /* Adjust width of the block */
+    margin: 0 auto; /* Center the block */
+}
+
+.button {
+    display: inline-block; /* Buttons adjust to the size of the text */
+    padding: 1rem 2.5rem;
+    margin: 1rem 0; /* Space between the buttons */
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    border: none;
+    border-radius: 50px;
+    font-size: clamp(12px, 1.5vw, 20px);
+    font-family: 'Josefin Sans', 'Josefin-Sans-Flex-Fallback', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--color-dark);
+}
+
+.textbox {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ddd;
+    text-align: center;
+    background-color: white;
+}
+
+.textbox p {
+    font-size: 18px;
+    color: #333;
+}
+
+
+@media screen and (min-width: 720px) {
+
+    #navbar-fullscreen {
+        display: flex;
+    }
+
+    #nav-buttons {
+        display: none;
+    }
+
+    main {
+        background-image: url('../images/silvester_Hamburg.jpg');
+    }
+
+}
+
+
+
