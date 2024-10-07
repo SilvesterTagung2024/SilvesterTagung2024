@@ -308,7 +308,21 @@ main {
     display: none;
 }
 
+.team-gallery {
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 24px;
+    margin: 2rem auto 1rem auto;
+}
 
+.team-image {
+    border-radius: 10px;
+}
+
+.team-name {
+    font-size: clamp(14px, 1.5vw, 20px);
+}
 
 
 footer {
