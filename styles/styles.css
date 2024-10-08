@@ -357,6 +357,15 @@ daily-comments p {
     height: auto;
 }
 
+.packing-list {
+    margin: 1rem auto;
+    width: 75%;
+}
+.packing-list li {
+    text-align: left;
+}
+
+
 @media screen and (min-width: 720px) {
 
     #navbar-fullscreen {
