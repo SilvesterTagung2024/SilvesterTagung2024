@@ -385,7 +385,7 @@ daily-comments p {
 }
 
 .registration-text-block {
-    margin: 1rem auto;
+    margin: 1.5rem auto;
 }
 
 .bottom-border {
@@ -394,6 +394,10 @@ daily-comments p {
     padding-bottom: 1rem;
 }
 
+.spacing-bottom {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
 
 @media screen and (min-width: 720px) {
 
