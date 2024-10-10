@@ -70,7 +70,7 @@ nav {
     font-size: clamp(10px, 1.5vw, 14px);
 }
 
-.registration-text a {
+.registration-text a, .contact-text a {
     color: var(--color-black);
     text-decoration: underline;
     font-weight: 300;
@@ -87,7 +87,7 @@ nav {
 }
 
 
-#navbar-fullscreen li a:hover, .navbar li a:hover, #nav-buttons a:hover, .split-line a:hover, .registration-text a:hover {
+#navbar-fullscreen li a:hover, .navbar li a:hover, #nav-buttons a:hover, .split-line a:hover, .registration-text a:hover, .contact-text a:hover {
     text-decoration: underline;
 }
 
@@ -266,7 +266,7 @@ main {
     font-size: clamp(10px, 1.5vw, 14px);
 }
 
-.quote, .program {
+.quote, .program, .contact-box {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center; /* Add this line */
@@ -399,6 +399,46 @@ daily-comments p {
     padding-bottom: 1rem;
 }
 
+.image-gallery {
+    width: 100%;
+    display: block;
+}
+
+.image-column {
+    margin: 0.5rem 1rem;
+}
+
+.flashback-image {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 0.5rem auto;
+}
+
+.contact-information {
+    color: var(--color-black);
+    font-weight: 400;
+    margin: 1rem auto;
+    width: 100%;
+}
+
+.contact-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0.5rem 2rem 0rem 2rem;
+}
+
+.contact-line {
+    margin: 1rem auto;
+}
+
+.contact-text {
+    text-align: center;
+    width: 100%;
+    font-size: clamp(14px, 1.5vw, 20px);
+}
+
+
 @media screen and (min-width: 720px) {
 
     #navbar-fullscreen {
@@ -417,6 +457,11 @@ daily-comments p {
         grid-template-columns: 1fr 3.5fr;
     }
     
+    .contact-box {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
     .quote-image {
         width: 60%;
     }
@@ -459,6 +504,14 @@ daily-comments p {
 
     .program-daily {
         display: none;
+    }
+
+    .image-gallery {
+        display: flex;
+    }
+
+    .contact-line {
+        display: flex;
     }
 
 }
