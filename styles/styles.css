@@ -343,11 +343,19 @@ main {
 footer {
     background-color: var(--color-dark);
     margin-top: 1rem;
+    padding: 1rem;
 }
 
 footer p {
     color: var(--color-white);
     text-align: center;
+    font-size: clamp(12px, 1.5vw, 20px);
+}
+
+.footer-text a {
+    color: var(--color-white);
+    text-decoration: underline;
+    font-weight: 300;
     font-size: clamp(12px, 1.5vw, 20px);
 }
 
