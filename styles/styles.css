@@ -77,6 +77,11 @@ nav {
     font-size: clamp(14px, 1.5vw, 20px);
 }
 
+.registration-text li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
 .navbar {
     text-align: center;
 }
